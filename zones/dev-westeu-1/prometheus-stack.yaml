@@ -34,6 +34,11 @@ spec:
               ruleSelector:
                 matchLabels:
                   release: prometheus-operator
+              securityContext:
+                runAsGroup: 1001070001
+                runAsNonRoot: true
+                runAsUser: 1001070001
+                fsGroup: 1001070001
             ingress:
               enabled: false
               annotations:
