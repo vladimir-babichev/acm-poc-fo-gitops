@@ -35,10 +35,10 @@ spec:
                 matchLabels:
                   release: prometheus-operator
               securityContext:
-                runAsGroup: 1001070001
-                runAsNonRoot: true
-                runAsUser: 1001070001
-                fsGroup: 1001070001
+                runAsGroup: 0
+                runAsNonRoot: false
+                runAsUser: 1000930000
+                fsGroup: 1000930000
             ingress:
               enabled: false
               annotations:
