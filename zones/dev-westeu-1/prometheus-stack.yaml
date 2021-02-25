@@ -9,7 +9,7 @@ spec:
   channel: acm-poc-channel-prometheus-helm/prometheus-community
   name: kube-prometheus-stack
   packageFilter:
-    version: "13.13"
+    version: "13.13.0"
   placement:
     placementRef:
       kind: PlacementRule
