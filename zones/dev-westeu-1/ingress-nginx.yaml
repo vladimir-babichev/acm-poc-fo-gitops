@@ -6,7 +6,7 @@ metadata:
   labels:
     acm-app: ingress-nginx
 spec:
-  channel: acm-poc-channel-fo-ingress-nginx-helm/ingress-nginx
+  channel: acm-poc-fo-gitops-ch-ingress-nginx/channel
   name: ingress-nginx
   packageFilter:
     version: "3.23.0"

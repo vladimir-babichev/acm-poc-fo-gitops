@@ -6,7 +6,7 @@ metadata:
   labels:
     acm-app: prometheus-stack
 spec:
-  channel: acm-poc-channel-fo-prometheus-helm/prometheus-community
+  channel: acm-poc-fo-gitops-ch-prometheus-community/channel
   name: kube-prometheus-stack
   packageFilter:
     version: "13.13.0"
