@@ -11,9 +11,9 @@ spec:
   packageFilter:
     version: "13.13.0"
   placement:
-    placementRef:
-      kind: PlacementRule
-      name: dev-westeu-1
+    clusterSelector:
+      matchLabels:
+        zone: dev-westeu-1
   packageOverrides:
   - packageName: prometheus-stack
     packageOverrides:
