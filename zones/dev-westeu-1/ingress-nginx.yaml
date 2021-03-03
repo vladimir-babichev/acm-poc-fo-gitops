@@ -2,7 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: ingress-nginx-dev-westeu-1
-  namespace: acm-poc-fo-gitops
+  namespace: ingress
   labels:
     acm-app: ingress-nginx
 spec:
@@ -11,9 +11,9 @@ spec:
   packageFilter:
     version: "3.23.0"
   placement:
-    placementRef:
-      kind: PlacementRule
-      name: dev-westeu-1
+    clusterSelector:
+      matchLabels:
+        zone: dev-westeu-1
   packageOverrides:
   - packageName: ingress-nginx
     packageOverrides:
