@@ -15,7 +15,7 @@ spec:
       matchLabels:
         zone: dev-westeu-1
   packageOverrides:
-  - packageName: prometheus-stack
+  - packageName: kube-prometheus-stack
     packageOverrides:
       - path: spec
         value:
