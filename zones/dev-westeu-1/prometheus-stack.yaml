@@ -16,17 +16,17 @@ spec:
         zone: dev-westeu-1
   packageOverrides:
   - packageName: prometheus-stack
-    packageOverrides:
-      - path: spec
-        value:
-          kube-prometheus-stack:
-            prometheus:
-              ingress:
-                enabled: true
-                hosts:
-                  - prometheus.dev
-            grafana:
-              ingress:
-                enabled: true
-                hosts:
-                  - grafana.dev
+    # packageOverrides:
+    #   - path: spec
+    #     value:
+    #       kube-prometheus-stack:
+    #         prometheus:
+    #           ingress:
+    #             enabled: true
+    #             hosts:
+    #               - prometheus.dev
+    #         grafana:
+    #           ingress:
+    #             enabled: true
+    #             hosts:
+    #               - grafana.dev
